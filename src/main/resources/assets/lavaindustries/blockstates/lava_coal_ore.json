@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "normal": { "textures": "lavaindustries:blocks/lava_coal_ore" }
+  },
+    "textures": {
+      "particle": "lavaindustries:blocks/lava_coal_ore",
+      "texture": "lavaindustries:blocks/lava_coal_ore"
+   }
+}
+
+
+
