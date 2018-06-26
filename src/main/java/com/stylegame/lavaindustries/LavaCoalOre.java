@@ -12,5 +12,17 @@ public class LavaCoalOre extends Block
         this.setRegistryName(lava_coal_ore);
         this.setUnlocalizedName(lava_coal_ore);
     }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
 }
 

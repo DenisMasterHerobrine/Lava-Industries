@@ -1,8 +1,6 @@
 package com.stylegame.lavaindustries.proxy;
 
-import com.stylegame.lavaindustries.BlocksRegister;
-import net.minecraft.client.renderer.block.model.ModelBakery;
-import net.minecraftforge.client.model.ModelLoader;
+import com.stylegame.lavaindustries.items.ItemReg;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -18,8 +16,8 @@ public class ClientProxy extends CommonProxy
     @Override
     public void init(FMLInitializationEvent event)
     {
+        ItemReg.registerRender();
         super.init(event);
-        BlocksRegister.registerRender();
     }
 
     @Override
