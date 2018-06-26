@@ -1,4 +1,6 @@
 
 itemGroup.tabLI=Lava Industries
 
-item.lavacoal.name=Lavatic Coal
+item.lavacoal.name=Lava Coal
+tile.LavaCoalOre.name=Lava Coal Ore
+

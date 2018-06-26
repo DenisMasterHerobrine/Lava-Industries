@@ -1,5 +1,6 @@
 package com.stylegame.lavaindustries.proxy;
 
+import com.stylegame.lavaindustries.BlocksRegister;
 import com.stylegame.lavaindustries.items.ItemReg;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -16,6 +17,7 @@ public class ClientProxy extends CommonProxy
     @Override
     public void init(FMLInitializationEvent event)
     {
+        BlocksRegister.registerRender();
         ItemReg.registerRender();
         super.init(event);
     }
