@@ -13,6 +13,6 @@ public class LavaCoal extends Item{
     }
     @Override
     public int getItemBurnTime(ItemStack itemStack) {
-        return 12800;
+        return 25600;
     }
 }

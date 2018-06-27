@@ -3,7 +3,6 @@ package com.stylegame.lavaindustries.worldgen;
 import com.stylegame.lavaindustries.BlocksRegister;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.DimensionType;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
@@ -18,7 +17,6 @@ public class OreWorldGen implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
         if (world.provider.getDimension() == 0) {
-       // if (world.provider.getDimensionType() == DimensionType.NETHER){
 
             generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 
