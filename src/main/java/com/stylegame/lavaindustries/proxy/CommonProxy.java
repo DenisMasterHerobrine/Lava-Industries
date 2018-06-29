@@ -1,6 +1,7 @@
 package com.stylegame.lavaindustries.proxy;
 
 import com.stylegame.lavaindustries.BlocksRegister;
+import com.stylegame.lavaindustries.crafts.CraftRegister;
 import com.stylegame.lavaindustries.items.ItemReg;
 import com.stylegame.lavaindustries.worldgen.WorldGenRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -18,7 +19,7 @@ public class CommonProxy
     }
 
     public void init(FMLInitializationEvent event){
-
+        CraftRegister.recipesRegister();
     }
 
     public void postInit(FMLPostInitializationEvent event) {

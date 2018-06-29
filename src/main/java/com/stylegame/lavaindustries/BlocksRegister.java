@@ -1,6 +1,7 @@
 package com.stylegame.lavaindustries;
 
 import com.stylegame.lavaindustries.baseores.LavaCoalOreParams;
+import com.stylegame.lavaindustries.baseores.OtherBlockParams;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -15,16 +16,19 @@ public class BlocksRegister
 {
 
     public static Block LavaCoalOre = new LavaCoalOreParams(Material.ROCK, "LavaCoalOre", "LavaCoalOre", "pickaxe", 2, 15.0F, 1.0F);
+    public static Block MachineCase = new OtherBlockParams(Material.ROCK, "MachineCase", "MachineCase", "pickaxe", 1, 7.0F, 2.0F);
 
     public static void register()
     {
         setRegister(LavaCoalOre);
+        setRegister(MachineCase);
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRender()
     {
         setRender(LavaCoalOre);
+        setRender(MachineCase);
     }
 
     private static void setRegister(Block block)
