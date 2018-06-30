@@ -14,14 +14,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlocksRegister
 {
-
     public static Block LavaCoalOre = new LavaCoalOreParams(Material.ROCK, "LavaCoalOre", "LavaCoalOre", "pickaxe", 2, 15.0F, 1.0F);
     public static Block MachineCase = new OtherBlockParams(Material.ROCK, "MachineCase", "MachineCase", "pickaxe", 1, 7.0F, 2.0F);
-
+    public static Block LavaCoalBlock = new OtherBlockParams(Material.ROCK, "LavaCoalBlock", "LavaCoalBlock", "pickaxe", 2, 25.0F, 3.0F);
     public static void register()
     {
         setRegister(LavaCoalOre);
         setRegister(MachineCase);
+        setRegister(LavaCoalBlock);
     }
 
     @SideOnly(Side.CLIENT)
@@ -29,6 +29,7 @@ public class BlocksRegister
     {
         setRender(LavaCoalOre);
         setRender(MachineCase);
+        setRender(LavaCoalBlock);
     }
 
     private static void setRegister(Block block)
