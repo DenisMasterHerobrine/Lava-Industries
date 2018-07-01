@@ -1,7 +1,7 @@
 package com.stylegame.lavaindustries.baseores;
 
 import com.stylegame.lavaindustries.LavaIndustries;
-import com.stylegame.lavaindustries.items.ItemReg;
+import com.stylegame.lavaindustries.register.ItemReg;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

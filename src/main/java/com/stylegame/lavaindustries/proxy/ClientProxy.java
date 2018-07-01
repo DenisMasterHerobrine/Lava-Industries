@@ -1,8 +1,8 @@
 package com.stylegame.lavaindustries.proxy;
 
-import com.stylegame.lavaindustries.BlocksRegister;
+import com.stylegame.lavaindustries.register.BlocksRegister;
 import com.stylegame.lavaindustries.hadlers.FuelHandler;
-import com.stylegame.lavaindustries.items.ItemReg;
+import com.stylegame.lavaindustries.register.ItemReg;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

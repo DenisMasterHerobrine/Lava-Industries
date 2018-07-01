@@ -1,7 +1,7 @@
 package com.stylegame.lavaindustries.hadlers;
 
-import com.stylegame.lavaindustries.BlocksRegister;
-import com.stylegame.lavaindustries.items.ItemReg;
+import com.stylegame.lavaindustries.register.BlocksRegister;
+import com.stylegame.lavaindustries.register.ItemReg;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;

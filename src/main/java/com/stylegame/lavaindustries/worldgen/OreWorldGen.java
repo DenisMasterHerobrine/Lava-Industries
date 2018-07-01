@@ -1,6 +1,6 @@
 package com.stylegame.lavaindustries.worldgen;
 
-import com.stylegame.lavaindustries.BlocksRegister;
+import com.stylegame.lavaindustries.register.BlocksRegister;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

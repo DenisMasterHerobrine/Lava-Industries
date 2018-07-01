@@ -1,7 +1,7 @@
 package com.stylegame.lavaindustries.crafts;
 
-import com.stylegame.lavaindustries.BlocksRegister;
-import com.stylegame.lavaindustries.items.ItemReg;
+import com.stylegame.lavaindustries.register.BlocksRegister;
+import com.stylegame.lavaindustries.register.ItemReg;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
