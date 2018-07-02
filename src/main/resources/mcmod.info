@@ -3,7 +3,7 @@
   "modid" = "lavaindustries",
   "name" = "Lava Industries",
   "description" = "A Minecraft Mod about Lava, Machinery, Adventures. It allows to spend all lava in the Nether.",
-  "version" = "1.0.0.18",
+  "version" = "1.0.1.19",
   "mcversion" = "1.12.2",
   "authorList" = ["StyleGame"]
 }
