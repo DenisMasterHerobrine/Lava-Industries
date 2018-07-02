@@ -19,7 +19,6 @@ public class ClientProxy extends CommonProxy
     @Override
     public void init(FMLInitializationEvent event)
     {
-        TConstruct.preInitTConstruct();
         BlocksRegister.registerRender();
         ItemReg.registerRender();
         super.init(event);
