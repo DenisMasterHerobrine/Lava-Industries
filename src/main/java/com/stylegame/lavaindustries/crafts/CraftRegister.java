@@ -52,11 +52,12 @@ public class CraftRegister {
 
         FurnaceRecipes.instance().addSmeltingRecipe(new ItemStack(ItemReg.CoalniteAlloyChunk, 1), new ItemStack(ItemReg.CoalniteAlloyIngot, 1), 0.35f);
 
-        GameRegistry.addShapedRecipe(new ResourceLocation("coalnitealloyrod"), new ResourceLocation("coalnitealloyrod"), new ItemStack(ItemReg.CoalniteAlloyRod), new Object[]{
-                " C ",
-                " C ",
-                " C ",
-                'C', ItemReg.CoalniteAlloyIngot,
+        GameRegistry.addShapedRecipe(new ResourceLocation("CoalniteAlloyRod"), new ResourceLocation("CoalniteAlloyRod"), new ItemStack(ItemReg.CoalniteAlloyRod), new Object[]{
+                "  L",
+                " I ",
+                "L  ",
+                'L', ItemReg.LavaIngot,
+                'I', ItemReg.CoalniteAlloyIngot
         });
 
         GameRegistry.addShapedRecipe(new ResourceLocation("coalnitealloypickaxe"), new ResourceLocation("coalnitealloypickaxe"), new ItemStack(ItemReg.CoalnitePickaxe), new Object[]{
@@ -97,6 +98,15 @@ public class CraftRegister {
                 " R ",
                 'R', ItemReg.CoalniteAlloyRod,
                 'I', ItemReg.CoalniteAlloyIngot
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaIngot"), new ResourceLocation("LavaIngot"), new ItemStack(ItemReg.LavaIngot), new Object[]{
+                "GLG",
+                "LIL",
+                "GLG",
+                'I', ItemReg.CoalniteAlloyIngot,
+                'L', Items.LAVA_BUCKET,
+                'G', Items.GOLD_INGOT
         });
     }
 }

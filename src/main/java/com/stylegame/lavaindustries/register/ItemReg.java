@@ -1,9 +1,6 @@
 package com.stylegame.lavaindustries.register;
 
-import com.stylegame.lavaindustries.base.CoalniteAlloyChunk;
-import com.stylegame.lavaindustries.base.CoalniteAlloyIngot;
-import com.stylegame.lavaindustries.base.CoalniteAlloyRod;
-import com.stylegame.lavaindustries.base.LavaCoal;
+import com.stylegame.lavaindustries.base.*;
 import com.stylegame.lavaindustries.base.tools.CoalnitePickaxe;
 import com.stylegame.lavaindustries.base.tools.CoalniteShovel;
 import com.stylegame.lavaindustries.base.tools.CoalniteAxe;
@@ -19,6 +16,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ItemReg {
       public static Item LavaCoal = new LavaCoal("lavacoal",64);
+      public static Item LavaIngot = new LavaIngot("lavaingot",64);
       public static Item CoalniteAlloyChunk = new CoalniteAlloyChunk("CoalniteAlloyChunk",64);
       public static Item CoalniteAlloyIngot = new CoalniteAlloyIngot("CoalniteAlloyIngot",64);
       public static Item CoalniteAlloyRod = new CoalniteAlloyRod("CoalniteAlloyRod",64);
@@ -37,6 +35,7 @@ public class ItemReg {
     public static void register()
   {
       registerItems(LavaCoal);
+      registerItems(LavaIngot);
       registerItems(LavaApple);
       registerItems(CoalniteAlloyChunk);
       registerItems(CoalniteAlloyIngot);
@@ -52,6 +51,7 @@ public class ItemReg {
   public static void registerRender()
   {
       registerItemsRender(LavaCoal);
+      registerItemsRender(LavaIngot);
       registerItemsRender(LavaApple);
       registerItemsRender(CoalniteAlloyChunk);
       registerItemsRender(CoalniteAlloyIngot);

@@ -12,6 +12,7 @@ item.coalnitesword.name=Coalnite Alloy Sword
 item.coalniteaxe.name=Coalnite Alloy Axe
 item.coalnitepickaxe.name=Coalnite Alloy Pickaxe
 item.coalniteshovel.name=Coalnite Alloy Shovel
+item.lavaingot.name=Lava Ingot
 
 tile.MachineCase.name=Machine Case
 tile.LavaCoalBlock.name=Lava Coal Block

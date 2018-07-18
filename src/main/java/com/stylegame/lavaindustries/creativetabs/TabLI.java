@@ -1,7 +1,7 @@
 package com.stylegame.lavaindustries.creativetabs;
 
+import com.stylegame.lavaindustries.register.ItemReg;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
     public class TabLI extends CreativeTabs {
@@ -11,6 +11,6 @@ import net.minecraft.item.ItemStack;
 
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(Items.COAL);
+            return new ItemStack(ItemReg.LavaCoal);
         }
     }
