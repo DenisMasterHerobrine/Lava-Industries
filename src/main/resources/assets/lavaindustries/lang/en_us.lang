@@ -16,4 +16,7 @@ item.lavaingot.name=Lava Ingot
 
 tile.MachineCase.name=Machine Case
 tile.LavaCoalBlock.name=Lava Coal Block
+tile.Darkstone.name=Darkstone
+tile.DarkstoneBricks.name=Darkstone Bricks
+tile.RefinedDarkstone.name=Refined Darkstone
 

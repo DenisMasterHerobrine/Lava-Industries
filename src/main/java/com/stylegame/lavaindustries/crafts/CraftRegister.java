@@ -2,6 +2,7 @@ package com.stylegame.lavaindustries.crafts;
 
 import com.stylegame.lavaindustries.register.BlocksRegister;
 import com.stylegame.lavaindustries.register.ItemReg;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -108,5 +109,24 @@ public class CraftRegister {
                 'L', Items.LAVA_BUCKET,
                 'G', Items.GOLD_INGOT
         });
+
+        FurnaceRecipes.instance().addSmeltingRecipe(new ItemStack(BlocksRegister.Darkstone, 1), new ItemStack(BlocksRegister.RefinedDarkstone, 1), 0.7f);
+        FurnaceRecipes.instance().addSmeltingRecipe(new ItemStack(BlocksRegister.DarkstoneBricks, 1), new ItemStack(BlocksRegister.RefinedDarkstone, 1), 0.35f);
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("DarkstoneBricks"), new ResourceLocation("DarkstoneBricks"), new ItemStack(ItemReg.LavaIngot), new Object[]{
+                "D  ",
+                "   ",
+                "   ",
+                'D', BlocksRegister.Darkstone
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("DarkstoneBricks"), new ResourceLocation("DarkstoneBricks"), new ItemStack(ItemReg.LavaIngot), new Object[]{
+                "SB ",
+                "   ",
+                "   ",
+                'S', Blocks.STONE,
+                'B', Items.DYE
+        });
     }
+
 }
