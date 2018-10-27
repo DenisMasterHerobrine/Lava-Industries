@@ -113,19 +113,19 @@ public class CraftRegister {
         FurnaceRecipes.instance().addSmeltingRecipe(new ItemStack(BlocksRegister.Darkstone, 1), new ItemStack(BlocksRegister.RefinedDarkstone, 1), 0.7f);
         FurnaceRecipes.instance().addSmeltingRecipe(new ItemStack(BlocksRegister.DarkstoneBricks, 1), new ItemStack(BlocksRegister.RefinedDarkstone, 1), 0.35f);
 
-        GameRegistry.addShapedRecipe(new ResourceLocation("DarkstoneBricks"), new ResourceLocation("DarkstoneBricks"), new ItemStack(ItemReg.LavaIngot), new Object[]{
+        GameRegistry.addShapedRecipe(new ResourceLocation("DarkstoneBricks"), new ResourceLocation("DarkstoneBricks"), new ItemStack(BlocksRegister.DarkstoneBricks), new Object[]{
                 "D  ",
                 "   ",
                 "   ",
                 'D', BlocksRegister.Darkstone
         });
 
-        GameRegistry.addShapedRecipe(new ResourceLocation("DarkstoneBricks"), new ResourceLocation("DarkstoneBricks"), new ItemStack(ItemReg.LavaIngot), new Object[]{
+        GameRegistry.addShapedRecipe(new ResourceLocation("Darkstone"), new ResourceLocation("Darkstone"), new ItemStack(BlocksRegister.Darkstone), new Object[]{
                 "SB ",
                 "   ",
                 "   ",
                 'S', Blocks.STONE,
-                'B', Items.DYE
+                'B', Items.FLINT
         });
     }
 
