@@ -3,8 +3,13 @@ buildscript {
         jcenter()
         maven { url = "http://files.minecraftforge.net/maven" }
     }
+    maven {
+        name 'Curseforge Maven'
+        url 'http://minecraft.curseforge.com/api/maven/'
+    }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        compile "project-42:project42-1.12.2:1.2.2:8:deobf"
     }
 
 }
