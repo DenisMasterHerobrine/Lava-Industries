@@ -1,6 +1,7 @@
 package com.stylegame.lavaindustries.register;
 
 import com.stylegame.lavaindustries.base.*;
+import com.stylegame.lavaindustries.base.armor.ItemLavaArmor;
 import com.stylegame.lavaindustries.base.tools.CoalnitePickaxe;
 import com.stylegame.lavaindustries.base.tools.CoalniteShovel;
 import com.stylegame.lavaindustries.base.tools.CoalniteAxe;
@@ -9,10 +10,12 @@ import com.stylegame.lavaindustries.food.FoodClass;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
+import static com.stylegame.lavaindustries.base.armor.ItemLavaArmor.armorMaterial;
 
 public class ItemReg {
       public static Item LavaCoal = new LavaCoal("lavacoal",64);
@@ -31,6 +34,13 @@ public class ItemReg {
     public static ItemAxe CoalniteAxe = new CoalniteAxe("coalniteaxe", CoalniteMaterialAxe);
     public static ItemSpade CoalniteShovel = new CoalniteShovel("coalniteshovel", CoalniteMaterialShovel);
     public static ItemSword CoalniteSword = new CoalniteSword("coalnitesword", CoalniteMaterialSword);
+
+    public static Item
+            BOOTS = new ItemLavaArmor("boots",armorMaterial, 1, EntityEquipmentSlot.FEET),
+            LEGS = new ItemLavaArmor("legs", armorMaterial, 2, EntityEquipmentSlot.LEGS),
+            CHESTPLATE = new ItemLavaArmor("chestplate", armorMaterial, 1, EntityEquipmentSlot.CHEST),
+            HEAD = new ItemLavaArmor("helmet", armorMaterial, 1, EntityEquipmentSlot.HEAD);
+
 
     public static void register()
   {

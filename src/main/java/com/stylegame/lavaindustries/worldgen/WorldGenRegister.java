@@ -6,7 +6,7 @@ public class WorldGenRegister {
 
     public static void register() {
 
-        GameRegistry.registerWorldGenerator(new OreWorldGenerator(), 0);
+        GameRegistry.registerWorldGenerator(new OverworldWorldGenerator(), 0);
 
     }
 
