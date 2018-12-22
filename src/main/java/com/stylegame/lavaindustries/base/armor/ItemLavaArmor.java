@@ -17,5 +17,5 @@ public class ItemLavaArmor extends ItemArmor
         this.setUnlocalizedName(name);
     }
 
-    public static ItemArmor.ArmorMaterial armorMaterial = EnumHelper.addArmorMaterial("lavaindustries:lavaingotarmor", "lavaindustries:lavaingotarmor", 1030, new int[]{1, 2, 3, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 6.0F).setRepairItem(new ItemStack((ItemReg.LavaIngot)));
+    public static ItemArmor.ArmorMaterial armorMaterial = EnumHelper.addArmorMaterial("lavaindustries:lavaingotarmor", "lavaindustries:lavaingotarmort", 1030, new int[]{5, 7, 6, 5}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 6.0F).setRepairItem(new ItemStack((ItemReg.LavaIngot)));
 }

@@ -1,6 +1,7 @@
 package com.stylegame.lavaindustries.worldgen;
 
 import com.stylegame.lavaindustries.register.BlocksRegister;
+import net.minecraft.block.BlockRedFlower;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -27,7 +28,8 @@ public class OverworldWorldGenerator implements IWorldGenerator {
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
-        generateOre(BlocksRegister.LavaCoalOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 8, 12, 10);
+        generateOre(BlocksRegister.LavaCoalOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 8, 6, 12);
+        generateOre(BlocksRegister.Darkstone.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 150, 32, 9);
 
     }
 

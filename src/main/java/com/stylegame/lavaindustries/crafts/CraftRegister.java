@@ -127,5 +127,22 @@ public class CraftRegister {
                 'S', Blocks.STONE,
                 'B', Items.FLINT
         });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("TorchVanilla"), new ResourceLocation("TorchVanilla"), new ItemStack(Blocks.TORCH, 16), new Object[]{
+                " L ",
+                " S ",
+                "   ",
+                'S', Items.STICK,
+                'L', ItemReg.LavaCoal
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("FireChargeVanilla"), new ResourceLocation("FireChargeVanilla"), new ItemStack(Items.FIRE_CHARGE, 8), new Object[]{
+                "GB ",
+                "L  ",
+                "   ",
+                'B', Items.BLAZE_POWDER,
+                'L', ItemReg.LavaCoal,
+                'G', Items.GUNPOWDER
+        });
     }
 }

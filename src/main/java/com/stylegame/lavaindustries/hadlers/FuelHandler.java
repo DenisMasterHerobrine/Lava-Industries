@@ -11,9 +11,9 @@ public class FuelHandler implements IFuelHandler {
     public int getBurnTime(ItemStack fuel) {
         Item fuelItem = fuel.getItem();
         if (fuelItem == ItemReg.LavaCoal) {
-            return 25600;
+            return 19200;
         } else if (fuelItem == Item.getItemFromBlock(BlocksRegister.LavaCoalBlock)) {
-            return 256000;
+            return 192000;
         }
         return 0;
     }

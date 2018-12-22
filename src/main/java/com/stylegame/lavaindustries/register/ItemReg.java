@@ -54,6 +54,11 @@ public class ItemReg {
       registerItems(CoalniteAxe);
       registerItems(CoalniteShovel);
       registerItems(CoalniteSword);
+
+      //registerItems(BOOTS);
+      //registerItems(LEGS);
+      //registerItems(CHESTPLATE);
+      //registerItems(HEAD);
   }
 
 
@@ -70,6 +75,11 @@ public class ItemReg {
       registerItemsRender(CoalniteAxe);
       registerItemsRender(CoalniteShovel);
       registerItemsRender(CoalniteSword);
+
+      //registerItemsRender(BOOTS);
+      //registerItemsRender(LEGS);
+      //registerItemsRender(CHESTPLATE);
+      //registerItemsRender(HEAD);
   }
 
     private static void registerItems(Item item) {
