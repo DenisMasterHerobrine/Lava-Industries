@@ -1,58 +1,42 @@
 package com.stylegame.lavaindustries.worldgen;
 
 import com.stylegame.lavaindustries.register.BlocksRegister;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
-public class OverworldWorldGenerator implements IWorldGenerator
-{
-    private WorldGenerator ore_LavaCoal;
+public class OverworldWorldGenerator implements IWorldGenerator {
 
-    public OverworldWorldGenerator()
-    {
-        ore_LavaCoal = new WorldGenMinable(BlocksRegister.LavaCoalOre.getDefaultState(), 1);
+    @Override
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+
+        if (world.provider.getDimension() == 0) {
+            // if (world.provider.getDimensionType() == DimensionType.NETHER){
+
+            generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+
+        }
+
     }
 
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
-    {
-        switch(world.provider.getDimension())
-        {
-            case 0:
+    private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
-                runGenerator(ore_LavaCoal, world, random, chunkX, chunkZ, 1, 1, 150);
+        generateOre(BlocksRegister.LavaCoalOre.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 8, 12, 10);
 
-                break;
+    }
 
-            case 1:
-
-                break;
-
-            case -1:
-
-                break;
+    private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
+        int deltaY = maxY - minY;
+        for (int i = 0; i < chances; i++) {
+            BlockPos pos = new BlockPos(x + random.nextInt(16), minY + random.nextInt(deltaY), z + random.nextInt(16));
+            WorldGenMinable generator = new WorldGenMinable(ore, size);
+            generator.generate(world, random, pos);
         }
     }
-
-    private void runGenerator(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chance, int minHeight, int maxHeight)
-    {
-        if(minHeight > maxHeight || minHeight < 0 || maxHeight > 256) throw new IllegalArgumentException("Ore generated out of bounds.");
-        int heightDiff = maxHeight - minHeight + 1;
-
-        for(int i = 0; i < chance; i++)
-        {
-            int x = chunkX * 16 + rand.nextInt(16);
-            int y = minHeight + rand.nextInt(heightDiff);
-            int z = chunkZ * 16 + rand.nextInt(16);
-
-            gen.generate(world, rand, new BlockPos(x, y, z));
-        }
-    }
-
 }

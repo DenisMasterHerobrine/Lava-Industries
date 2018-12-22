@@ -12,14 +12,15 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent event)
-    {
-        WorldGenRegister.register();
-        ItemReg.register();
-        BlocksRegister.register();
-    }
+{
+    WorldGenRegister.register();
+    ItemReg.register();
+    BlocksRegister.register();
+}
 
     public void init(FMLInitializationEvent event){
         CraftRegister.recipesRegister();
+        WorldGenRegister.register();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
