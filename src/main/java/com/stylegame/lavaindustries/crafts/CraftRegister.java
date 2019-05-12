@@ -2,7 +2,6 @@ package com.stylegame.lavaindustries.crafts;
 
 import com.stylegame.lavaindustries.register.BlocksRegister;
 import com.stylegame.lavaindustries.register.ItemReg;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -143,6 +142,51 @@ public class CraftRegister {
                 'B', Items.BLAZE_POWDER,
                 'L', ItemReg.LavaCoal,
                 'G', Items.GUNPOWDER
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaInfusedDiamond"), new ResourceLocation("LavaInfusedDiamond"), new ItemStack(ItemReg.LavaInfusedDiamond), new Object[]{
+                "ICI",
+                "CDC",
+                "ICI",
+                'I', ItemReg.LavaIngot,
+                'C', ItemReg.CoalniteAlloyIngot,
+                'D', Items.DIAMOND
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaInfusedHelmet"), new ResourceLocation("LavaInfusedHelmet"), new ItemStack(ItemReg.HEAD), new Object[]{
+                "IDI",
+                "C C",
+                "   ",
+                'I', ItemReg.LavaIngot,
+                'C', ItemReg.CoalniteAlloyIngot,
+                'D', ItemReg.LavaInfusedDiamond
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaInfusedChestplate"), new ResourceLocation("LavaInfusedChestplate"), new ItemStack(ItemReg.CHESTPLATE), new Object[]{
+                "I I",
+                "CDC",
+                "CIC",
+                'I', ItemReg.LavaIngot,
+                'C', ItemReg.CoalniteAlloyIngot,
+                'D', ItemReg.LavaInfusedDiamond
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaInfusedLeggings"), new ResourceLocation("LavaInfusedLeggings"), new ItemStack(ItemReg.LEGS), new Object[]{
+                "IDI",
+                "C C",
+                "C C",
+                'I', ItemReg.LavaIngot,
+                'C', ItemReg.CoalniteAlloyIngot,
+                'D', ItemReg.LavaInfusedDiamond
+        });
+
+        GameRegistry.addShapedRecipe(new ResourceLocation("LavaInfusedBoots"), new ResourceLocation("LavaInfusedBoots"), new ItemStack(ItemReg.BOOTS), new Object[]{
+                "C C",
+                "IDI",
+                "   ",
+                'I', ItemReg.LavaIngot,
+                'C', ItemReg.CoalniteAlloyIngot,
+                'D', ItemReg.LavaInfusedDiamond
         });
     }
 }
